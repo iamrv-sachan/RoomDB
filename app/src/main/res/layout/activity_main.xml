@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/nameEdt"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="NAME"></EditText>
+
+
+
+
+        <EditText
+            android:id="@+id/ageEdt"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="AGE"></EditText>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="ADD"></Button>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/userRv"
+        tools:listitem="@android:layout/simple_expandable_list_item_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
+
